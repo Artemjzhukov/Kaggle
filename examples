@@ -28,3 +28,9 @@ avg_first_seven = sum(num_customers[:7])/7
 avg_last_seven = sum(num_customers[-7:])/7
 max_month = max(num_customers)
 min_month = min(num_customers)
+alphabet = "A.B.C.D.E.F.G.H.I.J.K.L.M.N.O.P.Q.R.S.T.U.V.W.X.Y.Z"
+letters = alphabet.split(".")
+
+def percentage_growth(num_users, yrs_ago):
+    growth = (num_users[len(num_users)-1] - num_users[len(num_users)-yrs_ago-1])/num_users[len(num_users)-yrs_ago-1]
+    return growth
