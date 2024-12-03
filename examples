@@ -24,3 +24,7 @@ def get_dose(weight):
         dose = 10
     return dose
 
+avg_first_seven = sum(num_customers[:7])/7 
+avg_last_seven = sum(num_customers[-7:])/7
+max_month = max(num_customers)
+min_month = min(num_customers)
